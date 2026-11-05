@@ -94,6 +94,34 @@ npm run preview
 
 ---
 
+## 🐳 Docker Multi-Stage Deployment
+
+This repository includes a production-grade **multi-stage Docker build** using **Node.js 22 Alpine** (for the build stage) and **NGINX Alpine** (for high-performance, lightweight production serving with gzip compression and SPA routing).
+
+### Build & Run with Docker CLI:
+```bash
+# 1. Build the multi-stage image
+docker build -t nilesh-portfolio:latest .
+
+# 2. Run the container on port 8080
+docker run -d -p 8080:80 --name nilesh-portfolio nilesh-portfolio:latest
+
+# 3. View running container & health status
+docker ps
+```
+Visit [http://localhost:8080](http://localhost:8080) to see your containerized portfolio running live!
+
+### Run with Docker Compose:
+```bash
+# Build and start in detached mode
+docker compose up -d --build
+
+# Stop the container
+docker compose down
+```
+
+---
+
 ## 🌐 Free 1-Click Deployment
 
 - **Vercel**: Run `npx vercel` or connect your GitHub repository to Vercel (zero config needed, Vite is automatically detected).
