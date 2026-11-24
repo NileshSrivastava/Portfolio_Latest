@@ -127,3 +127,6 @@ docker compose down
 - **Vercel**: Run `npx vercel` or connect your GitHub repository to Vercel (zero config needed, Vite is automatically detected).
 - **Netlify**: Connect your repository or drag-and-drop the `dist/` folder into [Netlify Drop](https://app.netlify.com/drop).
 - **GitHub Pages**: Build with `npm run build` and deploy the `dist/` directory.
+
+
+Added for pr test
