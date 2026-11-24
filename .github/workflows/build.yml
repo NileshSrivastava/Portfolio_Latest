@@ -20,9 +20,10 @@ jobs:
       - name: Print ENV
         run: echo "Hello,this is ${{ env.name }}"
       - name: Print OS
-        run: echo "This is ${{ secrets.Secret }}
+        run: echo "This is ${{ secrets.SECRET }}"
   test:
     runs-on: ubuntu-latest
+    needs: Print
 
     steps:
       - name: Checkout code
