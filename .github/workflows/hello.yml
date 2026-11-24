@@ -9,5 +9,7 @@ jobs:
         run: echo "Hi I am saying Hello!"
       - name: Prints PWD!
         run: pwd
-      - name: Prints all files!
-        run: ls -la
+      - name: Clones the code
+        run: git clone https://github.com/NileshSrivastava/Portfolio_Latest.git
+      - name: Prints Files and Directories!
+        run: ls -la 
