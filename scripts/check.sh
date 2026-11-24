@@ -1,4 +1,4 @@
-#!/usr/bin/env bash                             # line 1: copy the first line of run-build.sh
+#!/usr/bin/env bash                            
 
 if [ -f index.html ]; then          # which flag means "is it a FILE?"
     echo "✅ index.html found"
