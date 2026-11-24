@@ -10,6 +10,6 @@ jobs:
       - name: Prints PWD!
         run: pwd
       - name: Clones the code
-        run: git clone https://github.com/NileshSrivastava/Portfolio_Latest.git
-      - name: Prints Files and Directories!
-        run: ls -la 
+        run: actions/checkout@v7
+      - name: Runs the check script
+        run: bash scripts/check.sh
