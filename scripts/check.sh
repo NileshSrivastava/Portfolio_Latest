@@ -1,7 +1,7 @@
 #!/usr/bin/env bash                            
 
-if [ -f notfound.html ]; then          # which flag means "is it a FILE?"
-    echo "✅ notfound.html found"
+if [ -f index.html ]; then          # which flag means "is it a FILE?"
+    echo "✅ index.html found"
     exit 0                          # success number
 else
     echo "❌ index.html is missing"
