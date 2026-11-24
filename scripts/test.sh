@@ -3,7 +3,7 @@
 echo "testing before build"
 
 # Check whether source files exist
-if [ -f "package.json" ] && [ -d "noc" ]; then
+if [ -f "package.json" ] && [ -d "src" ]; then
     echo "Source files found."
 
 else
