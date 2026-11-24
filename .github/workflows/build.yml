@@ -1,7 +1,6 @@
-name:Build
+name: Build
 on:
   push:
-    branches: [ main ]
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,5 +15,5 @@ jobs:
         run: npm ci
       - name: Build the project
         run: npm run build
-      -name: Verify build successfully
+      - name: Verify build successfully
         run: bash scripts/check.sh
