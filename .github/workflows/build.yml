@@ -13,9 +13,18 @@ on:
       - master
 
 jobs:
-  build:
+  test:
     runs-on: ubuntu-latest
 
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+
+      - name: Run tests
+        run: bash scripts/test.sh
+  build:
+    runs-on: ubuntu-latest
+    needss: test
     steps:
       - name: Checkout code
         uses: actions/checkout@v7
