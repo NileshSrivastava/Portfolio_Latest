@@ -1,0 +1,16 @@
+name: test
+on:
+  workflow_call:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v7
+
+      - name: Run tests
+        run: bash scripts/test.sh
+
+      - name: Print Test
+        run: echo "Test completed successfully"
