@@ -22,7 +22,7 @@ jobs:
 
     steps:
       - name: Deployment
-        uses: actions/download-artifact@v8
+        uses: actions/download-artifact@v7
         with:
           name: app-build
           path: ./app-build
